@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- META DATOS -->
+    <meta name="description" content="Hola bienvenido a mi Portafolio Profesional" />
+    <link rel="canonical" href="https://jonmolinna.github.io/portafolio/cv" />
+    <!-- <link rel="favicon" href="https://jonmolinna.github.io/portafolio/cv/assets/favicon.png"> -->
+    <!-- <link rel="apple-touch-icon" href="https://jonmolinna.github.io/portafolio/cv/assets/favicon.png"> -->
+    <meta name="theme-color" content="#0c151d" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" name="twitter:title" content="Portafolio CV - jonmolina" />
+    <meta property="og:description" name="twitter:description" content="Hola bienvenido a mi Portafolio Profesional" />
+    <meta property="og:image" name="twitter:image"
+        content="https://res.cloudinary.com/dhdxq3mkm/image/upload/v1648670862/portafolio/banner_tkybxx.jpg" />
+    <meta property="og:url" name="twitter:url" content="https://jonmolinna.github.io/Portafolio/cv" />
+
+    <title>Portafolio - Jhon</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600&family=Outfit:wght@300;600;700&family=Varela&display=swap"
+        rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- ================= PROFILE ========================= -->
+    <header class="profile container">
+        <div class="profile__container">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <p>JM</p>
+                    </div>
+                </div>
+
+                <h2 class="profile__name">Jhon Ñ. Molina</h2>
+                <h3 class="profile__profession">Desarrollador web</h3>
+
+                <div class="profile__social">
+                    <a href="https://github.com/jonmolinna" class="button button button__small button__dark"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=51935748451" class="button button__small button__dark"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="profile__buttons">
+                <a href="#" class="button" target="_blank" rel="noopener">
+                    Descargar CV
+                    <i class="fa-solid fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= MAIN ========================= -->
+    <main class="main">
+        <section class="filters container">
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects">Proyectos</button>
+                <button class="filters__button" data-target="#skills">Skills</button>
+                <button class="filters__button" data-target="#experience">Experiencia</button>
+            </ul>
+
+            <div class="filters__sections">
+                <!-- Projects -->
+                <div class="projects__content filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="https://res.cloudinary.com/dhdxq3mkm/image/upload/v1654703316/portafolio/to-do_aspypd.png"
+                            alt="imagen">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">To - Do</h3>
+                                <div class="projects__links">
+                                    <a class="projects__button button button__small"
+                                        href="https://todo-react-20220430.web.app/" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a class="projects__button button button__small"
+                                        href="https://github.com/jonmolinna/todo-frontend" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a class="projects__button button button__small"
+                                        href="https://github.com/jonmolinna/todo-backend" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="projects__card">
+                        <img src="https://res.cloudinary.com/dhdxq3mkm/image/upload/v1654698402/portafolio/twitter-clone_vnwa84.png"
+                            alt="imagen">
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle">Web</span>
+                                <h3 class="projects__title">Twitter Clone</h3>
+                                <div class="projects__links">
+                                    <a class="projects__button button button__small"
+                                        href="https://twitter-react-b53bd.web.app/" target="_blank" rel="noopener">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                    <a class="projects__button button button__small"
+                                        href="https://github.com/jonmolinna/twitter-frontend" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a class="projects__button button button__small"
+                                        href="https://github.com/jonmolinna/twitter-backend" target="_blank"
+                                        rel="noopener">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills__content" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Frontend</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">React Js</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Tailwindcss</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Material-ui</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Git</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">GitHub</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Desarrollador Backend</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Express Js</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Nest Js</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Mongo DB</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Graphql</h3>
+                                        <span class="skills__level">Básico</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">TypeORM</h3>
+                                        <span class="skills__level">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title">Educación</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+                                    <i class="fa-regular fa-square-check"></i>
+                                    <div>
+                                        <h3 class="skills__name">Cibertec</h3>
+                                        <span class="skills__level">Egresado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="experience__content" data-content id="experience">
+                    <article class="experience__area">
+                        <h3 class="experience__company">
+                            BBC CONSULTORÍA LEGAL Y EMPRESARIAL
+                        </h3>
+                        <p class="experience__rubro">Empresa Jurídica de Cobranza</p>
+                        <div class="experience__description">
+                            <p>
+                                Descripción:
+                            </p>
+                            <ul>
+                                <li>Dar soporte al sistema CRM de la empresa.</li>
+                                <li>Generar e imprimir cartas para los gestores del campo puedan notificar a los
+                                    clientes.
+                                </li>
+                                <li>Creación de reportes en Excel, para realizar una toma de decisión adecuada.</li>
+                            </ul>
+                        </div>
+                        <aside>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <p>Asistente de Sistemas</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-laptop"></i>
+                                <p>Excel - Word - Office 365</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-regular fa-calendar"></i>
+                                <p>Noviembre 2018 al Enero 2020</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Lima - Lince</p>
+                            </div>
+                        </aside>
+                    </article>
+                    <article class="experience__area">
+                        <h3 class="experience__company">
+                            L&J ABOGADOS CONSULTORES EMPRESARIALES
+                        </h3>
+                        <p class="experience__rubro">Empresa Jurídica de Cobranza</p>
+                        <div class="experience__description">
+                            <p>
+                                Descripción:
+                            </p>
+                            <ul>
+                                <li>Dar soporte técnico al personal de call center.</li>
+                                <li>Creación de reportes de acuerdo a la solicitud de los proveedores.</li>
+                                <li>Dar soporte al sistema CRM de la empresa.</li>
+                            </ul>
+                        </div>
+                        <aside>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-user-tie"></i>
+                                <p>Soporte Técnico</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-laptop"></i>
+                                <p>Excel - Word</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-regular fa-calendar"></i>
+                                <p>Enero 2018 al Octubre 2018.</p>
+                            </div>
+                            <div class="experience__details">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Lima - Cercado de Lima.</p>
+                            </div>
+                        </aside>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ========================= -->
+    <footer class="footer container">
+        <span class="footer__copy">
+            &#169; Jonmolinna. All rigths reserved
+        </span>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

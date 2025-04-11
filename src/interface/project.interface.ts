@@ -1,4 +1,4 @@
-type language =
+export type language =
   | "React"
   | "NodeJs"
   | "MongoDB"
@@ -9,9 +9,15 @@ type language =
   | "VueJs"
   | "GraphQL";
 
-export interface projectInterface {
+export interface linkInterface {
+  name: string;
   url: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+}
+
+export interface projectInterface {
   name: string;
   description: string;
   languages: Array<language>;
+  links: Array<linkInterface>;
 }

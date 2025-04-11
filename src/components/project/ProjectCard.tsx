@@ -4,12 +4,16 @@ import { FaCheck } from "react-icons/fa";
 import { FaImage } from "react-icons/fa";
 import ProjectLanguage from "./ProjectLanguage";
 import ProyectLink from "./ProyectLink";
+import useModal from "../../hooks/useModal";
+import Modal from "../common/Modal";
 
 type Props = {
   project: projectInterface;
 };
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
+  const { isOpen, setIsOpen } = useModal();
+
   return (
     <div className="border border-zinc-700 bg-zinc-800 shadow-sm rounded-lg p-6">
       <aside>
@@ -27,7 +31,10 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
         ))}
       </aside>
       <aside className="mt-7 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-4">
-        <button className="flex items-center justify-center gap-2 text-zinc-400 py-1 px-2 border border-zinc-600 rounded-lg bg-zinc-800  hover:text-white hover:bg-zinc-700 cursor-pointer">
+        <button
+          onClick={() => setIsOpen(true)}
+          className="flex items-center justify-center gap-2 text-zinc-400 py-1 px-2 border border-zinc-600 rounded-lg bg-zinc-800  hover:text-white hover:bg-zinc-700 cursor-pointer"
+        >
           <FaImage />
           <span className="text-sm font-medium">Galería</span>
         </button>
@@ -35,6 +42,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           <ProyectLink key={index} link={link} />
         ))}
       </aside>
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
     </div>
   );
 };

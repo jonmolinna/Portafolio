@@ -15,9 +15,15 @@ export interface linkInterface {
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
+export interface tabProjectInterface {
+  name: string;
+  posts: Array<{ id: number; url: string }>;
+}
+
 export interface projectInterface {
   name: string;
   description: string;
   languages: Array<language>;
   links: Array<linkInterface>;
+  images: Array<tabProjectInterface>;
 }

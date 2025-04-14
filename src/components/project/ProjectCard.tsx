@@ -6,6 +6,7 @@ import ProjectLanguage from "./ProjectLanguage";
 import ProyectLink from "./ProyectLink";
 import useModal from "../../hooks/useModal";
 import Modal from "../common/Modal";
+import Tabs from "../common/Tabs";
 
 type Props = {
   project: projectInterface;
@@ -42,7 +43,11 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
           <ProyectLink key={index} link={link} />
         ))}
       </aside>
-      <Modal isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
+        <div>
+          <Tabs data={project.images} />
+        </div>
+      </Modal>
     </div>
   );
 };

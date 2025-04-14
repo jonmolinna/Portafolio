@@ -1,14 +1,14 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import Tabs from "./Tabs";
 import { motion, AnimatePresence } from "motion/react";
 
 type Props = {
   isOpen: boolean;
   setIsOpen: (open: boolean) => void;
+  children: ReactNode;
 };
 
-const Modal: React.FC<Props> = ({ isOpen, setIsOpen }) => {
+const Modal: React.FC<Props> = ({ isOpen, setIsOpen, children }) => {
   return (
     <AnimatePresence>
       <Dialog
@@ -23,8 +23,8 @@ const Modal: React.FC<Props> = ({ isOpen, setIsOpen }) => {
           variants={modalVariants}
           className="fixed inset-0 flex w-screen items-center justify-center"
         >
-          <DialogPanel className="max-w-lg border bg-white rounded-lg">
-            <Tabs />
+          <DialogPanel className="max-w-md border bg-white rounded-lg">
+            {children}
           </DialogPanel>
         </motion.div>
       </Dialog>

@@ -41,7 +41,7 @@ Abril 2015 - Diciembre 2017
 
 ## Ver Portafolio
 
-[¡ver link!]
+[Link del portafolio](https://jonmolinna.web.app)
 
 ---
 

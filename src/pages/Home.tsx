@@ -1,6 +1,7 @@
 import { MdEmail } from "react-icons/md";
 import { IoDocumentText } from "react-icons/io5";
 import { FaRocket } from "react-icons/fa";
+import { Link } from "react-router";
 
 const Home = () => {
   return (
@@ -29,12 +30,12 @@ const Home = () => {
               >
                 <IoDocumentText className="w-6 h-6" /> Descargar CV
               </a>
-              <a
-                href="#proyectos"
+              <Link
+                to="/projects"
                 className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 flex items-center gap-2 shadow-md"
               >
                 <FaRocket /> Ver Proyectos
-              </a>
+              </Link>
             </div>
           </aside>
         </div>

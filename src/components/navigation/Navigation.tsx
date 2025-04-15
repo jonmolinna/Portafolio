@@ -8,8 +8,7 @@ const items: Array<{
 }> = [
   { link: "/", Icon: FaHome },
   { link: "/projects", Icon: FaCode },
-  { link: "/", Icon: FaBookOpen },
-  { link: "/", Icon: FaGithub },
+  { link: "/skill", Icon: FaBookOpen },
 ];
 
 const Navigation = () => {
@@ -19,6 +18,14 @@ const Navigation = () => {
         {items.map(({ Icon, link }, index) => (
           <NavigationItem Icon={Icon} link={link} key={index} />
         ))}
+        <a
+          href="https://github.com/jonmolinna"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center h-14 w-14 rounded-full border border-zinc-800 cursor-pointer hover:bg-zinc-800 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+        >
+          <FaGithub className="w-5 h-5 mb-2 text-zinc-400 " />
+        </a>
       </div>
     </div>
   );

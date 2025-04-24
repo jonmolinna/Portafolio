@@ -24,8 +24,9 @@ const Home = () => {
             </div>
             <div className="flex flex-wrap mt-2 gap-3">
               <a
-                href="/JhonMolina-CV.pdf"
+                href="https://drive.google.com/file/d/1wzMhR-2P5Fywkyv_1CddxFm_nu53FtXP/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 flex items-center gap-2 shadow-md"
               >
                 <IoDocumentText className="w-6 h-6" /> Descargar CV

@@ -1,5 +1,7 @@
 # Portafolio Personal
 
+[Ver portafolio en vivo](https://jonmolinna.web.app)
+
 Bienvenido a mi portafolio como desarrollador web Aquí encontrarás una selección de proyectos que he desarrollado, así como un resumen de mis habilidades y formación técnica. Este portafolio fue creado con la intención de mostrar mis capacidades como desarrollador frontend y backend.
 
 ---
@@ -39,12 +41,6 @@ Abril 2015 - Diciembre 2017
 
 ---
 
-## Ver Portafolio
-
-[Link del portafolio](https://jonmolinna.web.app)
-
----
-
 ## Cómo Ejecutar este Proyecto
 
 1. Clona el repositorio:
@@ -55,7 +51,7 @@ cd Portafolio
 ```
 
 2. Instala las dependencias:
-   $ npm install
+   npm install
 
 3. Ejecuta el servidor de desarrollo:
-   $ npm run dev
+   npm run dev
